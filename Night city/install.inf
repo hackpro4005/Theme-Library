@@ -1,0 +1,31 @@
+[Version]
+Signature="$Windows NT$"
+
+[DefaultInstall]
+AddReg = Theme.AddReg
+CopyFiles=Install.Files
+
+
+[DestinationDirs]
+Install.Files=10,Resources\Themes\
+
+[SourceDisksNames]
+1="Theme Files","",1
+
+[SourceDisksFiles]
+night-city\city.png=1
+night-city\theme.msstyles=1
+Night City.theme=1
+
+
+[Install.Files]
+night-city\city.png
+night-city\theme.msstyles
+Night City.theme
+
+
+[Theme.AddReg]
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Themes","CurrentTheme",0x00020000,"%SystemRoot%\Resources\Themes\Night City.theme"
+HKCU,"Software\Microsoft\Windows\CurrentVersion\Themes","ThemeActive",0x00000000,"1"
+
+
